@@ -13,5 +13,9 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="WebContent/libs/jquery-3.3.1.min.js"/>
+	<classpathentry kind="lib" path="WebContent/libs/js.cookie.js"/>
+	<classpathentry kind="lib" path="WebContent/libs/galleria/galleria-1.5.7.js"/>
+	<classpathentry kind="lib" path="WebContent/libs/galleria/galleria-1.5.7.min.js"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
