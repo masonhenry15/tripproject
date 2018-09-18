@@ -2,8 +2,6 @@ $(function() {
 	var id = parseId(window.location.search);
 	getDetail(id);
 	showMap();
-
-
 });
 
 function showMap() {
