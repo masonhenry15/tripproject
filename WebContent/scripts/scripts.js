@@ -18,20 +18,18 @@ $(function(){
 	$(window).trigger('scroll');
 	var dpFrom = $('#from').datepicker({
 		dateFormat:'yy-mm-dd',
-		minDate:0
+		minDate:0,
+		onSelect:function(){
+			dpTo.datepicker('option','minDate',dpFrom.datepicker('getDate'));
+		}
 	});
 	dpFrom.datepicker('setDate',new Date());
 	
 	var dpTo = $('#to').datepicker({
 		dateFormat:'yy-mm-dd',
-		minDate:0,
-		onSelect:function(){
-			dpTo.datepicker('option','minDate',dpFrom.datepicker('getDate'));
-			
-		}
+		minDate:0
 	});
-	dpTo.datepicker('setdate',4);
-	
+	dpTo.datepicker('setDate',4);
 	
 	$('#form-search').submit(function (e) {
 		e.preventDefault();
@@ -61,6 +59,23 @@ function search(from, to) {
 		$('#list-bg').show();
     });
 	
+	
+}
+
+function createListItem(data) {
+	var $tmpl = $("#list-item-template").clone().removeAttr('id');
+	
+	$tmpl.find('.list-item-image').attr('src',data.titleImageUrl);
+	$tmpl.find('.list-item-name').attr(data.name);
+	$tmpl.find('.list-item-city-name').html(data.cityName);
+	
+	$tmpl.click(function (e) {
+    	var url = 'detail.html?id=' + data.id;
+    	
+    	window.location = url;
+    });
+	
+	return $tmpl;
 	
 }
 
