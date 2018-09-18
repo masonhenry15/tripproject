@@ -473,9 +473,6 @@ button:hover {
 .detail-container #map{
 	width: 100%;
 	height: 300px;
-<<<<<<< HEAD
-} 
-=======
 } 
 
 /*마이트립 */
@@ -486,7 +483,7 @@ button:hover {
 	margin-right: 10px;
 }
 
-.mytrip-container #myrip-list{
+.mytrip-container #mytrip-list{
 	display: inline-block;
 	width: 480px;
 	height: 500px;
@@ -515,11 +512,11 @@ button:hover {
 .mytrip-container span{
 	display : inline-block;
 	vertical-align: middle;
-	hieght: 30px;
+	height: 30px;
 	line-height: 30px;
 }
 
-.mytrip-container .item-handele{
+.mytrip-container .item-handle{
 	width: 22px;
 	height: 18px;
 	background-image:url('../images/btn_change.png');
