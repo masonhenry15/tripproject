@@ -31,8 +31,6 @@ $(function(){
 		}
 	});
 	dpTo.datepicker('setdate',4);
-	
-	
 	$('#form-search').submit(function (e) {
 		e.preventDefault();
     	
