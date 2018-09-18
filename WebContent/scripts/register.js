@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 $(function(){
 	generateYears($('#sel-birth'));
 	var birthSelect = $('#sel-birth').selectmenu();
