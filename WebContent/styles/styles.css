@@ -6,7 +6,7 @@
 }
 
 .form-box.login-box input[type="text"], .form-box.login-box input[type="password"],
-	.form-box.login-box buttoon {
+	.form-box.login-box button {
 	width: 470px;
 	height: 55px;
 }
@@ -446,15 +446,7 @@ button:hover {
 	font-size: 14px;
 	vertical-align: middle;
 }
-/* 마이트립 */
-.mytrip-container #map {
-	display: inline-block;
-<<<<<<< HEAD
-	font-size: 18px;
-	font-weight: bold;
-	vertical-align: middle;
-	margin-left: 3px;
-}
+
 
 .detail-header .detail-header-city-name {
 	display: inline-block;
@@ -481,6 +473,7 @@ button:hover {
 	margin-top: 10px;
 	margin-bottom: 30px;
 }
+
 .detail-desc {
 	margin-bottom: 30px;
 }
@@ -495,26 +488,20 @@ button:hover {
 	color: #757575;
 }
 
-.detail-container #map{
+.detail-container #map {
 	width: 100%;
 	height: 300px;
-} 
+}
 
 /*마이트립 */
-.mytrip-container #map{
-	display : inline-block;
-=======
->>>>>>> refs/remotes/origin/developer
+.mytrip-container #map {
+	display: inline-block;
 	width: 580px;
 	height: 500px;
 	margin-right: 10px;
 }
 
-<<<<<<< HEAD
-.mytrip-container #mytrip-list{
-=======
 .mytrip-container #mytrip-list {
->>>>>>> refs/remotes/origin/developer
 	display: inline-block;
 	width: 480px;
 	height: 500px;
@@ -547,11 +534,7 @@ button:hover {
 	line-height: 30px;
 }
 
-<<<<<<< HEAD
-.mytrip-container .item-handle{
-=======
 .mytrip-container .item-handle {
->>>>>>> refs/remotes/origin/developer
 	width: 22px;
 	height: 18px;
 	background-image: url('../images/btn_change.png');
