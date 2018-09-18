@@ -1,11 +1,12 @@
 @charset "UTF-8";
 
-/* 로그인 1*/
-#btn-home { background-color: #A4AAB2; }
+/* 로그인 */
+#btn-home {
+	background-color: #A4AAB2;
+}
 
-.form-box.login-box input[type="text"],
-.form-box.login-box input[type="password"],
-.form-box.login-box buttoon {
+.form-box.login-box input[type="text"], .form-box.login-box input[type="password"],
+	.form-box.login-box buttoon {
 	width: 470px;
 	height: 55px;
 }
@@ -19,20 +20,63 @@
 }
 
 /* 회원가입 */
-.form-box .inner { padding: 60px 70px; }
-#form-register { font-size: 15px; }
-#inp-password { margin-top: 26px; }
-.div-gender { margin-top: 12px; }
-.div-gender .txt-warning { margin-top: 2px; }
-#inp-female { margin-left: 20px; }
-.div-birth { margin-top: 17px; }
-.div-birth .txt-warning { margin-top: 10px; }
-#inp-accept { margin-top: 30px; }
-#btn-back { background-color: #A4AAB2; }
-.ui-selectmenu-text { color: #505050; font-weight: 400; }
-.ui-state-active, .ui-widget-content .ui-state-active { color: #000; }
-#sel-birth-button { background: #fff; border: 1px solid #ccc; }
-.div-accept .txt-warning { margin-top: 27px; }
+.form-box .inner {
+	padding: 60px 70px;
+}
+
+#form-register {
+	font-size: 15px;
+}
+
+#inp-password {
+	margin-top: 26px;
+}
+
+.div-gender {
+	margin-top: 12px;
+}
+
+.div-gender .txt-warning {
+	margin-top: 2px;
+}
+
+#inp-female {
+	margin-left: 20px;
+}
+
+.div-birth {
+	margin-top: 17px;
+}
+
+.div-birth .txt-warning {
+	margin-top: 10px;
+}
+
+#inp-accept {
+	margin-top: 30px;
+}
+
+#btn-back {
+	background-color: #A4AAB2;
+}
+
+.ui-selectmenu-text {
+	color: #505050;
+	font-weight: 400;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active {
+	color: #000;
+}
+
+#sel-birth-button {
+	background: #fff;
+	border: 1px solid #ccc;
+}
+
+.div-accept .txt-warning {
+	margin-top: 27px;
+}
 
 .txt-warning {
 	display: none;
@@ -40,6 +84,7 @@
 	color: red;
 	margin-top: -5px;
 }
+
 /* 공통 */
 @font-face {
 	font-family: 'Heebo';
@@ -48,7 +93,7 @@
 
 @font-face {
 	font-family: 'Heebo';
-	src: url('../fonts/Heebo-Bold.ttt') format('truetype');
+	src: url('../fonts/Heebo-Bold.ttf') format('truetype');
 	font-weight: bold;
 }
 
@@ -96,14 +141,7 @@ button:hover {
 
 .md-text {
 	font-family: 'Heebo', sans-serif;
-	font-size: 80px;
-	font-weight: bold;
-	color: #fff;
-}
-
-.md-text {
-	font-family: 'Heebo', sans-serif;
-	font-size: 80px;
+	font-size: 25px;
 	font-weight: normal;
 	color: #fff;
 }
@@ -144,11 +182,11 @@ button:hover {
 	width: 610px;
 	height: 740px;
 	background-color: #fff;
-	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 	margin: 150px auto 150px;
 }
 
-.form-box. title {
+.form-box .title {
 	font-size: 28px;
 	text-align: center;
 }
@@ -162,9 +200,8 @@ button:hover {
 	text-align: center;
 }
 
-.form-box input[type = "text"],
-.form-box input[type = "email"],
-.form-box input[type = "password"] {
+.form-box input[type="text"], .form-box input[type="email"], .form-box input[type="password"]
+	{
 	display: inline-block;
 	box-sizing: border-box;
 	border: 1px solid #ccc;
@@ -183,16 +220,14 @@ button:hover {
 	margin-top: 10px;
 }
 
-.form-box input[type = "text"],
-.form-box input[type = "email"],
-.form-box input[type = "password"] {
+.form-box.sm-box input[type="text"], .form-box.sm-box input[type="email"],
+	.form-box.sm-box input[type="password"], .form-box.sm-box button {
 	width: 370px;
 	height: 55px;
 }
 
-.form-box input[type = "text"],
-.form-box input[type = "email"],
-.form-box input[type = "password"] {
+.form-box.md-box input[type="text"], .form-box.md-box input[type="email"],
+	.form-box.md-box input[type="password"], .form-box.md-box button {
 	width: 470px;
 	height: 55px;
 }
@@ -220,7 +255,11 @@ button:hover {
 	background-image: url('../images/image_logo_white.png');
 }
 
-#header > div {
+#header.inverted span {
+	background-image: url('../images/image_logo_color.png');
+}
+
+#header>div {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -231,7 +270,7 @@ button:hover {
 	height: 100%;
 }
 
-#header > div > a {
+#header>div>a {
 	display: inline-block;
 	margin-top: 15px;
 }
@@ -245,6 +284,18 @@ button:hover {
 	margin-right: 20px;
 }
 
+#header.inverted .menu-items a {
+	color: #000;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* 메인 */
 #body {
 	width: 100%;
 	height: 100%;
@@ -285,7 +336,7 @@ button:hover {
 	margin-right: 17px;
 }
 
-.panel-b;pcl:last-of-type {
+.panel-block:last-of-type {
 	vertical-align: bottom;
 }
 
@@ -296,7 +347,7 @@ button:hover {
 	margin-bottom: 10px;
 }
 
-#search-panel input[type = "text"] {
+#search-panel input[type="text"] {
 	width: 330px;
 	height: 55px;
 	-webkit-box-sizing: border-box;
@@ -395,36 +446,10 @@ button:hover {
 	font-size: 14px;
 	vertical-align: middle;
 }
-
-
-/* 최종후 남은부분 */
- #body.detail {
-	background: #f6f7f7;
-}
-
-.detail-container, mytrip-container {
-	width: 1080px;
-	margin-top: 130px;
-	margin-bottom: 70px;
-	background-color: #fff;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 20px;
-}
-
-.detail-header {
-	line-height: 20px;
-	position: relative;
-	padding-top: 7px;
-	padding-bottom: 3px;
-}
-
-.detail-header img{
-	vertical-align: middle;
-}
-
-.detail-header .detail-header-name {
+/* 마이트립 */
+.mytrip-container #map {
 	display: inline-block;
+<<<<<<< HEAD
 	font-size: 18px;
 	font-weight: bold;
 	vertical-align: middle;
@@ -478,64 +503,74 @@ button:hover {
 /*마이트립 */
 .mytrip-container #map{
 	display : inline-block;
+=======
+>>>>>>> refs/remotes/origin/developer
 	width: 580px;
 	height: 500px;
 	margin-right: 10px;
 }
 
+<<<<<<< HEAD
 .mytrip-container #mytrip-list{
+=======
+.mytrip-container #mytrip-list {
+>>>>>>> refs/remotes/origin/developer
 	display: inline-block;
 	width: 480px;
 	height: 500px;
 	overflow: auto;
-	list-style-type:none;
-	margin:0;
-	padding:0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
-#mytrip-item-template{
+#mytrip-item-template {
 	display: none;
 }
 
-.mytrip-container li{
+.mytrip-container li {
 	position: relative;
 	margin: 0 3px 10px 3px;
 	padding: 15px 20px;
 	border: 1px solid #D7DBE2;
-	width : 470px;
+	width: 470px;
 	height: 60px;
 	box-sizing: border-box;
-	box-shadow: 2px 2px 7px -3px rbga(0, 0, 0, 0.2);
+	box-shadow: 2px 2px 7px -3px rgba(0, 0, 0, 0.2);
 	background-color: #fff;
 }
 
-.mytrip-container span{
-	display : inline-block;
+.mytrip-container span {
+	display: inline-block;
 	vertical-align: middle;
 	height: 30px;
 	line-height: 30px;
 }
 
+<<<<<<< HEAD
 .mytrip-container .item-handle{
+=======
+.mytrip-container .item-handle {
+>>>>>>> refs/remotes/origin/developer
 	width: 22px;
 	height: 18px;
-	background-image:url('../images/btn_change.png');
+	background-image: url('../images/btn_change.png');
 }
 
-.mytrip-container .item-icon{
-	width : 13px;
+.mytrip-container .item-icon {
+	width: 13px;
 	height: 16px;
 	margin-left: 7px;
 	background-image: url('../images/icon_list_location.png');
 }
 
-.mytrip-container .item-name{
+.mytrip-container .item-name {
 	font-size: 15px;
 	font-weight: bold;
 	color: #444;
 }
 
-.mytrip-container .item-line{
+.mytrip-container .item-line {
 	width: 2px;
 	height: 16px;
 	margin-left: 5px;
@@ -543,16 +578,16 @@ button:hover {
 	background-image: url('../images/line_location_gray.png');
 }
 
-.mytrip-container .item-city-name{
-	font-size : 13px;
+.mytrip-container .item-city-name {
+	font-size: 13px;
 	color: #909090;
 }
 
-.mytrip-container .item-remove{
-	position : absolute;
+.mytrip-container .item-remove {
+	position: absolute;
 	width: 16px;
 	height: 16px;
-	right : 20px;
+	right: 20px;
 	top: 21px;
-	background-image:url('../images/btn_close.png');
+	background-image: url('../images/btn_close.png');
 }
